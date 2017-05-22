@@ -5,6 +5,8 @@ Ejercicio del curso [Arquitectura Profesional CSS con ITCSS](https://escuela.it/
 
 El ejercicio está basado en PostCSS, el proyecto incluye todas las dependencias necesarias para la transpilación al CSS, un entorno de desarrollo con live-reload en el navegador, así como estadísticas y linter para comprobar nuestras buenas prácticas en CSS 😊.
 
+El ejercicio finalizado está en la rama [finish](https://github.com/EscuelaIt/itcss-elastic-login-form/tree/finish)
+
 ## Instalación
 > Requiere tener instalado [Node.js](https://nodejs.org)
 

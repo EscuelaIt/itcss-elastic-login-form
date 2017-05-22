@@ -5,6 +5,7 @@ const runSequence = require('run-sequence')
 const postcss = require('gulp-postcss')
 const cssnext = require('postcss-cssnext')
 const partialImport = require('postcss-partial-import')
+const mixins = require('postcss-mixins')
 const devtools = require('postcss-devtools')
 
 const cssstats = require('gulp-cssstats')
@@ -14,6 +15,7 @@ const outputCSS = './web/css'
 const processors = [
   devtools,
   partialImport,
+  mixins,
   cssnext
 ]
 

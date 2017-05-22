@@ -29,6 +29,7 @@
     "gulp-stylelint": "^3.9.0",
     "postcss-cssnext": "^2.11.0",
     "postcss-devtools": "^1.1.1",
+    "postcss-mixins": "^6.0.0",
     "postcss-partial-import": "^4.1.0",
     "run-sequence": "^1.2.2",
     "stylelint-config-standard": "^16.0.0"

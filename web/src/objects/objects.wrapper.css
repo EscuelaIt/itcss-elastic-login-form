@@ -1,0 +1,8 @@
+.o-container {
+  position: absolute;
+  width: 24em;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  animation: intro .7s var(--timingFunction) forwards;
+}

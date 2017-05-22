@@ -1,0 +1,72 @@
+/* Profile Card */
+
+.c-profile {
+  position: relative;
+
+  &--open {
+  }
+
+  &--open &__form {
+    visibility: visible;
+    height: auto;
+    opacity: 1;
+    transform: translateY(-6em);
+    padding-top: 12em;
+  }
+
+  &--open &__fields {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &--open &__avatar {
+    transform: translate(-50%, -1.5em);
+    border-radius: 50%;
+    border-color: rgba(0,0,0,0.6);
+    background-color: #e74c3c;
+  }
+
+  &__form {
+    position: relative;
+    background: white;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    padding: 3em;
+    border-radius: .25em;
+    filter: drop-shadow(0 0 2em rgba(0,0,0,0.4));
+    transition:
+      opacity .4s ease-in-out,
+      height .4s ease-in-out,
+      transform .4s var(--timingFunction),
+      padding .4s var(--timingFunction);
+  }
+
+  &__fields {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .2s var(--timingFunction);
+  }
+
+  &__avatar {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1.25em;
+    overflow: hidden;
+    width: 4.5em;
+    display: block;
+    transition: transform .3s var(--timingFunction);
+    will-change: transform;
+    border: 3px solid white;
+  }
+
+  &__avatar:focus {
+    outline: 0;
+  }
+
+  &__footer {
+    padding-top: 1em;
+  }
+}

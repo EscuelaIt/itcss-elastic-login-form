@@ -1,0 +1,11 @@
+.c-btn {
+  @add-mixin t-button;
+
+  &:focus {
+    outline: 0;
+  }
+  &:hover,
+  &:focus {
+    background: var(--colorBrandWhiteness);
+  }
+}

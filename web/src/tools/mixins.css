@@ -1,0 +1,16 @@
+/* https://github.com/postcss/postcss-mixins */
+
+
+@define-mixin t-button {
+  border: 0;
+  font-size: 0.75rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding: 0 1.5rem;
+  color: white;
+  background: #e74c3c;
+  text-transform: uppercase;
+  border-radius: .25rem;
+  letter-spacing: .2em;
+  transition: background .2s;
+}

@@ -1,0 +1,206 @@
+.c-profile__footer {
+    padding-top: 1em; }
+.c-profile__avatar:focus {
+    outline: 0; }
+.c-profile__avatar {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    border-radius: 1.25em;
+    overflow: hidden;
+    width: 4.5em;
+    display: block;
+    transition: -webkit-transform .3s "cubic-bezier(0.175, 0.885, 0.32, 1.275)";
+    transition: transform .3s "cubic-bezier(0.175, 0.885, 0.32, 1.275)";
+    transition: transform .3s "cubic-bezier(0.175, 0.885, 0.32, 1.275)", -webkit-transform .3s "cubic-bezier(0.175, 0.885, 0.32, 1.275)";
+    will-change: transform;
+    border: 3px solid white; }
+.c-profile__fields {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .2s "cubic-bezier(0.175, 0.885, 0.32, 1.275)"; }
+.c-profile__form {
+    position: relative;
+    background: white;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    padding: 3em;
+    border-radius: .25em;
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="32" /><feOffset dx="1" dy="1" result="offsetblur" /><feFlood flood-color="rgba(0,0,0,0.4)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
+    -webkit-filter: drop-shadow(0 0 2em rgba(0, 0, 0, .4));
+            filter: drop-shadow(0 0 2em rgba(0, 0, 0, .4));
+    transition:
+      opacity .4s ease-in-out,
+      height .4s ease-in-out,
+      padding .4s "cubic-bezier(0.175, 0.885, 0.32, 1.275)",
+      -webkit-transform .4s "cubic-bezier(0.175, 0.885, 0.32, 1.275)";
+    transition:
+      opacity .4s ease-in-out,
+      height .4s ease-in-out,
+      transform .4s "cubic-bezier(0.175, 0.885, 0.32, 1.275)",
+      padding .4s "cubic-bezier(0.175, 0.885, 0.32, 1.275)";
+    transition:
+      opacity .4s ease-in-out,
+      height .4s ease-in-out,
+      transform .4s "cubic-bezier(0.175, 0.885, 0.32, 1.275)",
+      padding .4s "cubic-bezier(0.175, 0.885, 0.32, 1.275)",
+      -webkit-transform .4s "cubic-bezier(0.175, 0.885, 0.32, 1.275)"; }
+.c-profile--open .c-profile__avatar {
+    -webkit-transform: translate(-50%, -1.5em);
+            transform: translate(-50%, -1.5em);
+    border-radius: 50%;
+    border-color: rgba(0, 0, 0, .6);
+    background-color: #e74c3c; }
+.c-profile--open .c-profile__fields {
+    opacity: 1;
+    visibility: visible; }
+.c-profile--open .c-profile__form {
+    visibility: visible;
+    height: auto;
+    opacity: 1;
+    -webkit-transform: translateY(-6em);
+            transform: translateY(-6em);
+    padding-top: 12em; }
+.c-btn:hover,
+  .c-btn:focus {
+    background: rgb(232, 138, 128); }/* Settings */
+/* Tools */
+/* https://github.com/postcss/postcss-mixins */
+/* Generic */
+html { box-sizing: border-box; }
+* {
+
+}
+*,
+  *:before,
+  *:after {
+      box-sizing: inherit; }
+/* Elements */
+html {
+  font-size: 100%;
+  line-height: 1.5;
+  height: 100%;
+}
+body {
+  position: relative;
+  margin: 0;
+  font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+  min-height: 100%;
+  background: linear-gradient(to bottom, rgb(232, 138, 128) 0%, #e74c3c 100%);
+  color: #777;
+}
+button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+}
+.field {
+  position: relative;
+  margin-bottom: 2em;
+}
+.label {
+  position: absolute;
+  height: 32px;
+  height: 2rem;
+  line-height: 32px;
+  line-height: 2rem;
+  bottom: 0;
+  color: #999;
+  transition: all .3s "cubic-bezier(0.175, 0.885, 0.32, 1.275)";
+}
+.input {
+  width: 100%;
+  font-size: 100%;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  height: 32px;
+  height: 2rem;
+  line-height: 32px;
+  line-height: 2rem;
+  border-bottom: 1px solid #eee;
+  color: #777;
+  transition: all .2s ease-in;
+}
+.input:focus {
+  outline: 0;
+  border-color: #ccc;
+}
+/* Using required and a faux pattern to see if input has text from http://stackoverflow.com/questions/16952526/detect-if-an-input-has-text-in-it-using-css */
+.input:focus + .label,
+input:valid + .label {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  font-size: 12px;
+  font-size: 0.75rem;
+  color: #ccc;
+}
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+/* Objects */
+.o-container {
+  position: absolute;
+  width: 24em;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+  -webkit-animation: intro .7s "cubic-bezier(0.175, 0.885, 0.32, 1.275)" forwards;
+          animation: intro .7s "cubic-bezier(0.175, 0.885, 0.32, 1.275)" forwards;
+}
+/* Aniamtions */
+/* Intro animation */
+@-webkit-keyframes intro {
+  from {
+    opacity: 0;
+    top: 0;
+  }
+  to {
+    opacity: 1;
+    top: 50%;
+  }
+}
+@keyframes intro {
+  from {
+    opacity: 0;
+    top: 0;
+  }
+  to {
+    opacity: 1;
+    top: 50%;
+  }
+}
+/* Components */
+.c-btn {
+  border: 0;
+  font-size: 12px;
+  font-size: 0.75rem;
+  height: 40px;
+  height: 2.5rem;
+  line-height: 40px;
+  line-height: 2.5rem;
+  padding: 0 24px;
+  padding: 0 1.5rem;
+  color: white;
+  background: #e74c3c;
+  text-transform: uppercase;
+  border-radius: .25rem;
+  letter-spacing: .2em;
+  transition: background .2s
+}
+.c-btn:focus {
+    outline: 0; }
+/* Profile Card */
+.c-profile {
+  position: relative
+}
+.c-profile--open {
+
+}
+/* Utitlities */

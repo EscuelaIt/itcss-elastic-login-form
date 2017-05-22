@@ -1,0 +1,36 @@
+{
+  "name": "itcss-elastic-login-form",
+  "version": "1.0.0",
+  "description": "Ejercicio del curso Arquitectura Profesional CSS con ITCSS",
+  "main": "./src/css/main.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EscuelaIt/itcss-elastic-login-form.git"
+  },
+  "keywords": [
+    "itcss",
+    "architecture",
+    "css"
+  ],
+  "author": "Joan León | joan.leon@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EscuelaIt/itcss-elastic-login-form/issues"
+  },
+  "homepage": "https://github.com/EscuelaIt/itcss-elastic-login-form#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-cssstats": "^1.0.1",
+    "gulp-postcss": "^7.0.0",
+    "gulp-stylelint": "^3.9.0",
+    "postcss-cssnext": "^2.11.0",
+    "postcss-devtools": "^1.1.1",
+    "postcss-partial-import": "^4.1.0",
+    "run-sequence": "^1.2.2",
+    "stylelint-config-standard": "^16.0.0"
+  }
+}
